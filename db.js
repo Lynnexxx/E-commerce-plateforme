@@ -6,7 +6,7 @@ var Pool =  require("pg").Pool;
 
 
 
-module.exports = new Pool({
+var pool = new Pool({
 
     host: process.env.host,
     user: process.env.user,
@@ -15,7 +15,7 @@ module.exports = new Pool({
     port: process.env.port
 
 });
-/*
+
 async function query(query, params) {
     const {rows, fields} = await pool.query(query, params);
 
@@ -26,4 +26,4 @@ async function query(query, params) {
 
 module.exports = {
     query
-}*/
+}
