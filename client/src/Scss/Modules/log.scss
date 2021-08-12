@@ -1,0 +1,27 @@
+.log{
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type-log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.illustration{
+    max-width: 500px;
+}
+
+.log h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: $mainColor;
+}

@@ -1,0 +1,34 @@
+.myInput{
+    position: relative;
+    padding-top: 20px;
+    margin: 20px;
+}
+
+.myInput input{
+    position: relative;
+    z-index: 2;
+    padding: 12px;
+    background: none;
+    border: 2px solid #333;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.placeholder{
+    z-index: -1;
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    font-size: 14px;
+
+    transition: all 0.3s;
+}
+
+.myInput input:focus + .placeholder,.myInput input:valid + .placeholder{
+    z-index: 3;
+    top: 20px;
+    font-size: 12px;
+    padding: 0 5px;
+    background-color: white;
+}
