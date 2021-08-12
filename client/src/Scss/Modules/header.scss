@@ -1,0 +1,27 @@
+.header{
+    @include container;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-menu-links{
+    padding: 1rem;
+    color: $mainColor;
+}
+
+.header-menu-links:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    max-width: 50px;
+}
