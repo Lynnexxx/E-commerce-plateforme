@@ -2,28 +2,28 @@ var express = require( "express" );
 var db = require('../db')
  // Afficher tous les articles
 
-exports.getAllArticles = async (req, res) => {
+// exports.getAllArticles = async (req, res) => {
 
 
-    return db.query ('select *from produits_africains.articles', []);
-}
+//     return db.query ('select *from produits_africains.articles', []);
+// }
 
 
 module.exports = {
-    /*
+    
     // Afficher tous les articles
 
     getAllArticles: function() {
-         return pool.query('select *from produits_africains.articles', function (error, result){
+         return db.query('select *from produits_africains.articles', function (error, result){
             if(error)
                 throw error;
             console.log(result.rows);
-            //res.json(result.rows);
-            //res.send(result);
+            res.json(result.rows);
+            res.send(result);
 
             
         });
-    },*/
+    },
 
 
     // Afficher un article en particulier

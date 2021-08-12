@@ -1,12 +1,12 @@
 import React from 'react';
-import {HeaderItem} from './HeaderItem';
-import Logo from '../../Images/logo.png';
-import Button from '../Buton/Button';
+import {HeaderItem} from './NavBarItem';
+// import Logo from '../../Images/logo.png';
+// import Button from '../Buton/Button';
 
-function Header() {
+function NavBar() {
     return (
         <header className="header" id="header">
-            <img className="logo" src={Logo} alt="logo"/>
+            <h1 className="logo">Afrik'Rea.</h1>
             <ul className="header-menu">
                { 
                 HeaderItem.map((item, index)=>{
@@ -15,11 +15,11 @@ function Header() {
                         )
                     })
                 }
-                <li><Button btnStyle="btn-primary">S'inscrire</Button></li>
-                <li><Button btnStyle="btn-secondary">Se connecter</Button></li>
+                {/* <li><Button btnStyle="btn-primary">S'inscrire</Button></li>
+                <li><Button btnStyle="btn-secondary">Se connecter</Button></li> */}
             </ul>
         </header>
     )
 }
 
-export default Header;
+export default NavBar;

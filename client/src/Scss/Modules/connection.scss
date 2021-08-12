@@ -1,0 +1,23 @@
+.form-connection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-connection h2{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.myInput{
+    width: 70%;
+}
+
+.password-forget{
+    padding: 20px 0;
+}
+
+.password-forget:hover{
+    text-decoration: underline;
+}

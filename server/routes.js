@@ -40,6 +40,4 @@ module.exports = app => {
       });
     });
 
-
-
-   }
+}
