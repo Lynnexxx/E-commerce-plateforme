@@ -4,8 +4,6 @@ import CradItem from '../CardItem/CradItem';
 
 function HomeCard() {
 
-    let items = [];
-
     return (
         <div className="subcard">
             {
