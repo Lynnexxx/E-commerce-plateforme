@@ -32,7 +32,7 @@ module.exports = {
 
 
         return db.query ('select *from produits_africains.articles', []);
-    }
+    },
    
 /*
     // Afficher un article en particulier
@@ -103,22 +103,22 @@ module.exports = {
        
     },
 
-
+*/
     //supprimer un article 
 
     deleteArticleById: async function(req, res, id){
-        return db.query('delete from articles where id=$1',[id]);
+        return db.query('delete from produits_africains.articles where id=$1',[id]);
     },
 
     //supprimer tous les articles d'une catégorie
 
     deleteAllArticlesByCategorie: async function(req, res, categorie){
-        var qury = "delete from articles where article->> 'categorie' = $1";
+        var qury = "delete from produits_africains.articles where article->> 'categorie' = $1";
         return db.query(qury, [categorie]);
 
     },
 
-
+/*
     // supprimer un article d’une catégorie donnée
 
     deleteArticleByCategorieandId: async function(req, res, id,categorie){

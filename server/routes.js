@@ -49,5 +49,19 @@ module.exports = app => {
          res.send(data);
       });
     });
+   // supprimer un article
+   app.delete("/article/:id/", (req, res) =>
+   { 
+
+     console.log("test");
+     const data = articleService.deleteArticleById(req,res,  req.params.id).then((d)=>
+     {
+        console.log(d);
+        res.send(data);
+     });
+   });
+    
+
+
 
 }
