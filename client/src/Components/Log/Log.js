@@ -1,7 +1,7 @@
 import React from 'react';
 import Connection from './Connection';
 import Inscription from './Inscription';
-import illustration from '../../Images/login1.png';
+import illustration from '../../Images/login.jpg';
 
 function Log(props) {
     let type;
