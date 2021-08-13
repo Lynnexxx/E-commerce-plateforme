@@ -7,11 +7,21 @@ module.exports = app => {
        res.json({status: "E-commerce API"});
    });
 
+   app.post("/article/", (req, res) => {
+      const data = articleService.postArticle(req, res).then( (d)=>{
+           
+           res.send(data);
+      } ).catch((d)=>{
+         console.log(d);
+         res.send(data);
+    } );
+   });
+
     
    app.get("/articles/", (req, res) => {
       getAllArticles(req, res).then( (d)=>{
            console.log(d);
-           res.send(d[0]);
+           res.send(d);
       } );
    });
 

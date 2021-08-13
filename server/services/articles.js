@@ -2,18 +2,13 @@ var express = require( "express" );
 var db = require('../db')
  // Afficher tous les articles
 
-// exports.getAllArticles = async (req, res) => {
-
-
-//     return db.query ('select *from produits_africains.articles', []);
-// }
-
+ 
 
 module.exports = {
     
-    // Afficher tous les articles
+    
 
-    getAllArticles: function() {
+    /*getAllArticles: function() {
          return db.query('select *from produits_africains.articles', function (error, result){
             if(error)
                 throw error;
@@ -23,9 +18,23 @@ module.exports = {
 
             
         });
+    },**/
+    //ajouter un article
+    postArticle :async (req, res) => {
+
+        //console.log(req.body);
+        return db.query ("insert into produits_africains.articles (article) values ($1)", [req.body]);
     },
 
 
+    // Afficher tous les articles
+    getAllArticles :async (req, res) => {
+
+
+        return db.query ('select *from produits_africains.articles', []);
+    }
+   
+/*
     // Afficher un article en particulier
     getArticleById : async (req, res,id) => {
                 return db.query ('select *from produits_africains.articles where id=$1', [id]);
@@ -125,6 +134,6 @@ module.exports = {
         var qury = "delete from articles where article->> 'nom_article' = $1";
         return db.query(qury, [name]);
 
-    }
+    }*/
 
 };
