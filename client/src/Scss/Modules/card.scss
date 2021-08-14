@@ -1,0 +1,73 @@
+.card-img{
+    max-width: 350px;
+    height: auto;
+}
+
+.card{
+    display: inline-block;
+    margin: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-type{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-name{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.card-detail{
+    @include container;
+    display: flex;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-detail-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-detail-image{
+    max-width: 800px;
+}
+
+.card-detail-categorie{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 0;
+}
+
+.card-detail-name{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-detail-type{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding-bottom: 30px;
+}
+
+.card-detail-describe{
+font-size: 1.5rem;
+    font-family: sans-serif;
+    padding-bottom: 50px;
+}
+
+.card-detail-prix{
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}

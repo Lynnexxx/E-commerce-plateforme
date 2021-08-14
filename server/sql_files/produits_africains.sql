@@ -17,7 +17,7 @@
 -- DROP SCHEMA IF EXISTS produits_africains CASCADE;
 CREATE SCHEMA produits_africains;
 -- ddl-end --
-ALTER SCHEMA produits_africains OWNER TO essenahoun;
+ALTER SCHEMA produits_africains OWNER TO tiffane;
 -- ddl-end --
 
 SET search_path TO pg_catalog,public,produits_africains;

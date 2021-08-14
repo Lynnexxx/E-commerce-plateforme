@@ -1,4 +1,4 @@
-const item = [
+export const item = [
     {
         "id": "1",
         "article": {
