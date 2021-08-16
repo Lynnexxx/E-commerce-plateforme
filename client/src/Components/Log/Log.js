@@ -2,21 +2,21 @@ import React from 'react';
 import Connection from './Connection';
 import Inscription from './Inscription';
 import illustration from '../../Images/login.jpg';
+import {Route, Switch} from 'react-router-dom';
 
 function Log(props) {
-    let type;
-
-    if(props.type==="inscription"){
-        type = <Connection/>
-    } else{
-        type = <Inscription/>
-    }
-
     return (
         <div className="log">
             <img src={illustration} alt="illustration" className="illustration"/>
             <div className="type-log">
-                {type}
+                <Switch>
+                    <Route path="/log/inscription">
+                        <Inscription/>
+                    </Route>
+                    <Route path="/log/connection">
+                        <Connection/>
+                    </Route>
+                </Switch>
             </div>
         </div>
     )

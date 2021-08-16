@@ -1,7 +1,8 @@
 import React from 'react';
 import {HeaderItem} from './NavBarItem';
 // import Logo from '../../Images/logo.png';
-// import Button from '../Buton/Button';
+import Button from '../Buton/Button';
+import {Link} from 'react-router-dom'
 
 function NavBar() {
     return (
@@ -11,12 +12,12 @@ function NavBar() {
                { 
                 HeaderItem.map((item, index)=>{
                         return (
-                            <li className="header-menu-item"> <a className="header-menu-links" href={item.url}>{item.name} </a> </li>
+                            <li key={index} className="header-menu-item"> <Link className="header-menu-links" to="/home">{item.name} </Link> </li>
                         )
                     })
                 }
-                {/* <li><Button btnStyle="btn-primary">S'inscrire</Button></li>
-                <li><Button btnStyle="btn-secondary">Se connecter</Button></li> */}
+                <li><Button btnStyle="btn-primary" type="inscription" link="/log/inscription">S'inscrire</Button></li>
+                <li><Button btnStyle="btn-secondary" type="connection" link="/log/connection">Se connecter</Button></li>
             </ul>
         </header>
     )

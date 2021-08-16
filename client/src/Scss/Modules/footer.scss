@@ -1,5 +1,4 @@
 .footer{
-    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -9,7 +8,6 @@
 .footer-contact{
     font-size: 1.2rem;
     span{
-        color: rgb(182, 182, 182);
         font-size: 1rem;
     }
     div{
@@ -33,13 +31,11 @@
 .newsletter-input{
     width: 60%;
     background: none;
-    color: white;
     font-size: 1.1rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid ;
 }
 
 .newsletter-input::placeholder{
-    color: white;
     font-size: 1.1rem;
 }
 
