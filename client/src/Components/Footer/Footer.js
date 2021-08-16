@@ -30,7 +30,7 @@ function Footer() {
                     {
                         Social.map((item, index)=>{
                             return (
-                                <li>
+                                <li key={index}>
                                     <a href={item.url}>
                                         <FontAwesomeIcon icon={item.icon}/>
                                     </a>

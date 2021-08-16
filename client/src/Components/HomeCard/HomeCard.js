@@ -9,7 +9,7 @@ function HomeCard() {
             {
                 item.map((item, index)=>{
                     return (
-                        <CradItem type="card" item={item.article}/>
+                        <CradItem type="card" item={item}/>
                     )
                 })
             }

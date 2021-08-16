@@ -17,7 +17,7 @@ function Connection() {
                 <label className="placeholder">Password</label>
             </div>
             <div>
-                <Button btnStyle="btn-primary">Se connecter</Button>
+                <Button link="/home" btnStyle="btn-primary">Se connecter</Button>
                 {/* eslint-disable-next-line */}
                 <a href="#" className="password-forget">Mot de passe oublié ?</a>
             </div>

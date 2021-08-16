@@ -28,7 +28,7 @@ function Inscription() {
                 <label className="placeholder">Numéro</label>
             </div>
             <div>
-                <Button btnStyle="btn-primary">S'inscrire</Button>
+                <Button link="/home" btnStyle="btn-primary">S'inscrire</Button>
                 {/* eslint-disable-next-line */}
                 <a href="#" className="password-forget">Mot de passe oublié ?</a>
             </div>

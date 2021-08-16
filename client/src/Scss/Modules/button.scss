@@ -8,16 +8,11 @@
 }
 
 .btn-primary, .btn-secondary:hover{
-    color: $myWhite;
-    background-color: $secondColor;
 }
 
 .btn-secondary{
-    background-color: $myWhite;
-    color: $secondColor;
-    border: 2px solid $secondColor;
+    border: 2px solid ;
 }
 
 .btn-primary:hover{
-    background-color: $secondColor;
 }
